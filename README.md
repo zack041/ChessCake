@@ -1,2 +1,2 @@
 # ChessCake
-A python-based chess engine that uses neural network evaluations. 5 seconds to search on default, Elo 2200-2300 (estimated based on games played against chess.com bots) 
+A Python-based neural network chess engine. Elo 2200-2300 (estimated based on games played against chess.com bots). 5 seconds to search by default.
