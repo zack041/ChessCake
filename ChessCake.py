@@ -196,10 +196,6 @@ class Engine:
         if time_limit is not None and start_time is not None:
             if time.time() - start_time > time_limit:
                 return None
-        if self.board.is_stalemate() or self.board.is_insufficient_material() or self.board.can_claim_draw():
-            value = 0
-            self.t_table[ind] = t_entry(value, depth)
-            return value
         entry = self.t_table.get(ind)
         hash_move = None
         if entry:
@@ -214,13 +210,17 @@ class Engine:
             value = -9999999-depth if self.board.turn else 9999999+depth
             self.t_table[ind] = t_entry(value, depth)
             return value
+
+        if self.board.is_stalemate() or self.board.is_insufficient_material() or self.board.is_fifty_moves():
+            value = 0
+            self.t_table[ind] = t_entry(value, depth)
+            return value
             
         if depth == 0:
             self.nodes += 1
             if self.board.is_check() or any(self.board.is_capture(move) for move in self.board.legal_moves):
                 value = self.quiescence(alpha, beta, 0, ind)
-                if (value>alpha and self.board.turn==chess.WHITE) or (value<beta and self.board.turn==chess.BLACK):
-                    self.t_table[ind] = t_entry(value, depth)
+                self.t_table[ind] = t_entry(value, depth)
             else:
                 value = self.nn_eval()
                 self.t_table[ind] = t_entry(value, depth)
