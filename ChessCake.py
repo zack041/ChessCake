@@ -374,4 +374,4 @@ class Engine:
                 print("move invalid")
 
 
-play(10)
+play(5)
