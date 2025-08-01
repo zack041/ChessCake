@@ -17,7 +17,7 @@ class t_entry:
         self.depth = depth
         self.best_move = best_move
         
-model = ort.InferenceSession("nneu.onnx", providers=["CPUExecutionProvider"])
+model = ort.InferenceSession("NNeval.onnx", providers=["CPUExecutionProvider"])
         
 def encode_board(board):
     matrix = np.zeros(64*13, dtype=np.float32)
