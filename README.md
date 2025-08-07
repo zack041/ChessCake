@@ -9,35 +9,36 @@ Evaluation is measured in centipawns (1/100 of a pawn value), while search depth
 
 The following output demonstrates the program’s execution:
 
-r n b q k b n r
-p p p p p p p p
-. . . . . . . .
-. . . . . . . .
-. . . . . . . .
-. . . . . . . .
-P P P P P P P P
-R N B Q K B N R
-search depth 10
-depth reached: 7
-evaluation: 15.1598482131958
-best move: g1f3
-nodes searched: 33480
-time to search: 5.000157833099365
-make move g1f3
-r n b q k b n r
-p p p p p p p p
-. . . . . . . .
-. . . . . . . .
-. . . . . . . .
-. . . . . N . .
-P P P P P P P P
-R N B Q K B . R
-search depth 10
-depth reached: 7
-evaluation: 9.403926849365234
-best move: g8f6
-nodes searched: 46272
-time to search: 5.000718116760254
+r n b q k b n r <br>
+p p p p p p p p <br>
+. . . . . . . . <br>
+. . . . . . . . <br>
+. . . . . . . . <br>
+. . . . . . . . <br>
+P P P P P P P P <br>
+R N B Q K B N R <br>
+search depth 10 <br>
+depth reached: 7 <br>
+evaluation: 15.1598482131958 <br>
+best move: g1f3 <br>
+nodes searched: 33480 <br>
+time to search: 5.000157833099365 <br>
+ <br>
+make move g1f3 <br>
+r n b q k b n r <br>
+p p p p p p p p <br>
+. . . . . . . . <br>
+. . . . . . . . <br>
+. . . . . . . . <br>
+. . . . . N . . <br>
+P P P P P P P P <br>
+R N B Q K B . R <br>
+search depth 10 <br>
+depth reached: 7 <br>
+evaluation: 9.403926849365234 <br>
+best move: g8f6 <br>
+nodes searched: 46272 <br>
+time to search: 5.000718116760254 <br>
 
 # Features
 1. Alpha-beta pruning
