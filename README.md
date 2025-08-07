@@ -53,4 +53,4 @@ time to search: 5.000718116760254 <br>
 
 # Neural Network
 
-Applies a compact 3-layer dense neural network with tanh activations. The model is trained using code provided in NNeval.py, and the training dataset originates from the Kaggle competition [Train Your Own Stockfish NNUE](https://www.kaggle.com/competitions/train-your-own-stockfish-nnue/overview). The Keras model is converted to ONNX format using the script keras2onnx.py, which is used in the engine.
+Applies a compact 3-layer dense neural network with tanh activations. The model is trained using code provided in NNeval.py, and the training dataset originates from the Kaggle competition [Train Your Own Stockfish NNUE](https://www.kaggle.com/competitions/train-your-own-stockfish-nnue/overview). The Keras model is converted to ONNX format using the script keras2onnx.py, to be used in the engine.
