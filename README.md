@@ -1,6 +1,6 @@
 # ChessCake
 A Python-based neural network chess engine with an estimated Elo of 2200–2300 (based on games played against Chess.com bots). Uses a default search time of 5 seconds per move.
-The CNN variant plays at an estimated Elo of 1600-1700
+<br> *The CNN variant plays at an estimated Elo of 1600-1700
 
 ![logo](https://github.com/zack041/ChessCake/blob/main/docs/logo.jpg)
 
@@ -55,5 +55,5 @@ time to search: 5.000718116760254 <br>
 # Neural Network
 
 Applies a compact 3-layer dense neural network with tanh activations. The model is trained using code provided in NNeval.py, and the training dataset originates from the Kaggle competition [Train Your Own Stockfish NNUE](https://www.kaggle.com/competitions/train-your-own-stockfish-nnue/overview). The Keras model is converted to ONNX format using the script keras2onnx.py, to be used in the engine.
-
-The CNN variant consists of three convolutional layers(32, 64, 128 filters) followed by a 256-unit dense layer and a final 1-unit output.
+<br>
+<br>The CNN variant consists of three convolutional layers(32, 64, 128 filters) followed by a 256-unit dense layer and a final 1-unit output.
